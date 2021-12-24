@@ -6,20 +6,24 @@ public class Hurricane {
 		for (int i = 20; i <= 200; i++) {
 			if (i >= 74 && i <= 95) {
 				category = 1;
+				System.out.println("Category: " + category + "   Wind Speed: " + i);
 			}
 			if (i >= 105 && i <= 110) {
 				category = 2;
+				System.out.println("Category: " + category + "   Wind Speed: " + i);
 			}
 			if (i >= 120 && i <= 130) {
 				category = 3;
+				System.out.println("Category: " + category + "   Wind Speed: " + i);
 			}
 			if (i >= 140 && i <= 155) {
 				category = 4;
+				System.out.println("Category: " + category + "   Wind Speed: " + i);
 			}
 			if (i >= 165 && i <= 194) {
 				category = 5;
+				System.out.println("Category: " + category + "   Wind Speed: " + i);
 			}
-			System.out.println("Category: " + category + "   Wind Speed: " + i);
 		}
 	}
 }
