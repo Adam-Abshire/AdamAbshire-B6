@@ -41,9 +41,11 @@ public class SumofOdd {
 		int totalEv = 0;
 		int totalO = 0;
 		do {
-			if (k % 2 == 0) {
+			switch (k % 2) {
+			case 0:
 				totalEv += k;
-			} else {
+				break;
+			default:
 				totalO += k;
 			}
 			k++;
