@@ -8,7 +8,10 @@ public class AverageNumber {
 			total += i;
 			iterations += 1;
 		}
-		System.out.println(total / iterations);
+		System.out.println("****************************");
+		System.out.println("For Loop");
+		System.out.println("Average between 20 & 30: " + total / iterations);
+		System.out.println("****************************");
 
 		int tot = 0;
 		int iter = 0;
@@ -18,7 +21,9 @@ public class AverageNumber {
 			iter += 1;
 			j++;
 		}
-		System.out.println(tot / iter);
+		System.out.println("While Loop");
+		System.out.println("Average between 20 & 30: " + tot / iter);
+		System.out.println("****************************");
 
 		int to = 0;
 		int it = 0;
@@ -28,6 +33,8 @@ public class AverageNumber {
 			it += 1;
 			k++;
 		} while (k <= 30);
-		System.out.println(to / it);
+		System.out.println("Do While Loop");
+		System.out.println("Average between 20 & 30: " + to / it);
+		System.out.println("****************************");
 	}
 }
