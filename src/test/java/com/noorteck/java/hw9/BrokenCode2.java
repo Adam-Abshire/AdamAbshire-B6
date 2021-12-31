@@ -23,31 +23,31 @@ public class BrokenCode2 {
 		}
 		// variables must be identical - result - not results
 		System.out.println(result);
-		
-		//changed season 
-		String season = "fall";
+
+		// changed season
+		String season = "Monday";
 
 		// no boolean statement for switch statements... just put the variable - compare
 		// with cases
 		switch (season) {
 		// colon after case
 		// Strings require ""s
-			case "fall":
+		case "fall":
 			System.out.println("Recovering from hot weather");
 			break;
-			case "winter":
+		case "winter":
 			// need a break to break out so cascade of results doesn't occur
 			System.out.println("Toooo cold");
 			break;
 		// spring is the variable we are looking for
 		// colon not semi colon
-			case "spring":
+		case "spring":
 			System.out.println("Recovering from cold weather");
 			break;
-			case "summer":
+		case "summer":
 			System.out.println("Toooo hot");
 
-			default:
+		default:
 			System.out.println("Season does not exist!");
 		}
 
