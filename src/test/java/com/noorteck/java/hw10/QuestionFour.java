@@ -10,9 +10,17 @@ public class QuestionFour {
 	}
 
 	public static void getDoWhileLoopResult(int minNum, int maxNum) {
-		do {
-			System.out.println(minNum);
-			minNum++;
-		} while (minNum <= maxNum);
+		
+		if (minNum <= maxNum){
+			do {
+				System.out.println(minNum);
+				minNum++;
+			} while (minNum <= maxNum);
+		} else {
+			do {
+				System.out.println(minNum);
+				minNum--;
+			} while (minNum >= maxNum);
+		}
 	}
 }
