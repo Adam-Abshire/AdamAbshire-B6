@@ -2,11 +2,12 @@ package com.noorteck.java.hw11;
 
 public class MonkeyStatus {
 	public static void main(String[] args) {
+		//you are in trouble if both monkeys are smiling or both monkeys are not smiling.
 		boolean areWeInTrouble = monkeyTrouble(true, true);
-		System.out.println(areWeInTrouble);
-		System.out.println(monkeyTrouble(false, false));
-		System.out.println(monkeyTrouble(true, false));
-		System.out.println(monkeyTrouble(false, true));
+		System.out.println("are we in trouble: " + areWeInTrouble);
+		System.out.println("are we in trouble: " + monkeyTrouble(false, false));
+		System.out.println("are we in trouble: " + monkeyTrouble(true, false));
+		System.out.println("are we in trouble: " + monkeyTrouble(false, true));
 	}
 	public static boolean monkeyTrouble(boolean aSmile, boolean bSmile) {
 		boolean result = false;

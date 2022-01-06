@@ -3,7 +3,10 @@ package com.noorteck.java.hw11;
 public class SleepStatus {
 	public static void main(String[] args) {
 		boolean amISleeping = sleepIn(true, false);
-		System.out.println(amISleeping);
+		System.out.println("can I sleep in: " + amISleeping);
+		System.out.println("can I sleep in: " + sleepIn(false, false));
+		System.out.println("can I sleep in: " + sleepIn(false, true));
+		System.out.println("can I sleep in: " + sleepIn(true, true));
 	}
 
 	public static boolean sleepIn(boolean isWeekday, boolean isVacation) {
