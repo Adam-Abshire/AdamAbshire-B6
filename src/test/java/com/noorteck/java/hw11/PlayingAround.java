@@ -2,6 +2,14 @@ package com.noorteck.java.hw11;
 
 public class PlayingAround {
 	public static void main(String[] args) {
+		int[] favNumbers = {8, 22, 42, 16, 13, 28};
+		for(int num = 0; num < favNumbers.length; num++) {
+			if(favNumbers[num] % 4 == 0) {
+				System.out.println(favNumbers[num]);
+			}else {
+				System.out.println("nooo");
+			}
+		}
 		System.out.println("*************************");
 		String[] daysOfTheWeek = { "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday" };
 		boolean vacation = false;
