@@ -12,14 +12,14 @@ public class Question12 {
 				// update oldStr with newStr at that index
 				textArray[i] = newStr;
 			} else {
-				textArray[i] = textArray[i];
+				continue;
 			}
 		}		
-		// convert text array to String
-		for (int i = 0; i < textArray.length; i++) {
-			result.concat(textArray[i]).concat(" ");
+		// concatenate the String back together from the String Array
+		for (int j = 0; j < textArray.length; j++) {
+			result = result.concat(textArray[j]).concat(" ");
 		}
-		// print new String value
+		// print out the new String
 		System.out.println(result);
 	}
 
