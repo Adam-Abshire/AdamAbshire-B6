@@ -31,7 +31,7 @@ public class BrokenCode {
 		
 	// addTwoNumbers require double argument
 	// addTwoNumbers require a return type - double
-	static double addTwoNumbers(double numOne, double numTwo) {
+	public static double addTwoNumbers(double numOne, double numTwo) {
 		double result = numOne + numTwo;
 		System.out.println(numOne + " + " + numTwo + " = " + result);
 		return result;
