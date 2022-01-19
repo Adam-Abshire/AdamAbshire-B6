@@ -14,7 +14,7 @@ public class Question12 {
 			} else {
 				continue;
 			}
-		}		
+		}
 		// concatenate the String back together from the String Array
 		for (int j = 0; j < textArray.length; j++) {
 			result = result.concat(textArray[j]).concat(" ");
