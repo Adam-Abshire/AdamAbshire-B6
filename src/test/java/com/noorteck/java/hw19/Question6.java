@@ -1,10 +1,20 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method that takes four String parameters a. converts parameter 1 and
+ * parameter 3 to upper case b. converts parameter 2 and parameter 4 to lower
+ * case c. then the method concatenates all four parameters and return the new
+ * String value
+ * 
+ * @author chefa
+ *
+ */
 public class Question6 {
 
 	protected static String combineStr(String strOne, String strTwo, String strThree, String strFour) {
 		String result = " ";
-		// converts to upper or lower case via toUpperCase() method or toLowerCase() method
+		// converts to upper or lower case via toUpperCase() method or toLowerCase()
+		// method
 		String newOne = strOne.toUpperCase();
 		String newTwo = strTwo.toLowerCase();
 		String newThree = strThree.toUpperCase();

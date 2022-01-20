@@ -1,5 +1,14 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method to replace each substring of a given string that matches the
+ * given regular expression with the given replacement the method takes 3 String
+ * parameters and replaces oldStr (parameter 2) from strOne (parameter 1) with
+ * newStr (parameter 3) and prints the new value
+ * 
+ * @author chefa
+ *
+ */
 public class Question12 {
 
 	public static void replaceStr(String strOne, String oldStr, String newStr) {
@@ -26,7 +35,7 @@ public class Question12 {
 	}
 
 	public static void main(String[] args) {
-		replaceStr("I cannot do it", "cannot", "can");
-		replaceStr("Tomorrow is my day", "Tomorrow", "Today");
+		replaceStr("I cannot do it", "cannot", "can"); // will replace cannot with can
+		replaceStr("Tomorrow is my day", "Tomorrow", "Today"); // will replace Tomorrow with Today
 	}
 }

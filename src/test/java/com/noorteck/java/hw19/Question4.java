@@ -1,5 +1,12 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method that takes one String parameter method converts parameter to
+ * upper case and returns new String value
+ * 
+ * @author chefa
+ *
+ */
 public class Question4 {
 
 	String toUpper(String strOne) {
@@ -18,6 +25,6 @@ public class Question4 {
 }
 
 /**
-	NOTE: there is a mistake in the test data listed on the requirements
-	toUpper("java") should return JAVA -- NOT LEARNING
-*/
+ * NOTE: there is a mistake in the test data listed on the requirements
+ * toUpper("java") should return JAVA -- NOT LEARNING
+ */

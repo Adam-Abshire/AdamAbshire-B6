@@ -1,5 +1,12 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method to check whether a given string ends with the
+ * contents(characters) of another string
+ * 
+ * @author chefa
+ *
+ */
 public class Question10 {
 
 	boolean isEndWith(String strOne, String strTwo) {

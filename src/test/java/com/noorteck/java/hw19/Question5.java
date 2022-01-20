@@ -1,5 +1,12 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method that takes on String parameter and the method converts the
+ * parameter to lower case return new String value
+ * 
+ * @author chefa
+ *
+ */
 public class Question5 {
 
 	protected String toLower(String strOne) {

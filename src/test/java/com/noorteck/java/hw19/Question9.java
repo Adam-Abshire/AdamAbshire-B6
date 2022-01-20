@@ -1,5 +1,13 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method that takes two String parameters Method checks if a given
+ * String contains the specified sequence of character values return true if it
+ * contains value otherwise false
+ * 
+ * @author chefa
+ *
+ */
 public class Question9 {
 
 	private boolean isThere(String strOne, String value) {

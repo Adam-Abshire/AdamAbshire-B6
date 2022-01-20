@@ -1,5 +1,9 @@
 package com.noorteck.java.hw19;
 
+/**
+ * compares two strings returns true if they are equal returns false if they are
+ * not equal
+ */
 public class Question1 {
 
 	static boolean isEqual(String strOne, String strTwo) {
@@ -18,9 +22,3 @@ public class Question1 {
 		System.out.println(isEqual("java", "java Programming"));
 	}
 }
-
-/**
-	compares two strings
-	returns true if they are equal
-	returns false if they are not equal
-*/

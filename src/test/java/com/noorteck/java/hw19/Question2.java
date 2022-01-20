@@ -1,7 +1,11 @@
 package com.noorteck.java.hw19;
 
+/**
+ * compares three String values, ignoring case if the three strings are equal,
+ * prints true if the three strings are not equal, prints false
+ */
 public class Question2 {
-	
+
 	protected boolean isThreeEqual(String strOne, String strTwo, String strThree) {
 		boolean result = false;
 		// compares strOne to both strTwo & strThree to see if they are all equal
@@ -11,7 +15,7 @@ public class Question2 {
 		}
 		return result;
 	}
-	
+
 	public static void main(String[] args) {
 		Question2 obj = new Question2();
 		System.out.println(obj.isThreeEqual("day", "DAY", "DaY"));
@@ -20,9 +24,3 @@ public class Question2 {
 		System.out.println(obj.isThreeEqual("javaProgramming", "java Programming", "Programming in Java"));
 	}
 }
-
-/**
-	compares three String values, ignoring case
-	if the three strings are equal, prints true
-	if the three strings are not equal, prints false
-*/

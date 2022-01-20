@@ -1,5 +1,12 @@
 package com.noorteck.java.hw19;
 
+/**
+ * write a method that takes on String parameter (name) the method returns a new
+ * String value appending the name parameter to "Hello"
+ * 
+ * @author chefa
+ *
+ */
 public class Question7 {
 
 	String helloTo(String strOne) {
