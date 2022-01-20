@@ -4,6 +4,7 @@ public class Question4 {
 
 	String toUpper(String strOne) {
 		String result = " ";
+		// converts all characters in strOne to upper case
 		result = strOne.toUpperCase();
 		return result;
 	}

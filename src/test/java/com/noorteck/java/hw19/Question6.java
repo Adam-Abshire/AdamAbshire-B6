@@ -4,10 +4,12 @@ public class Question6 {
 
 	protected static String combineStr(String strOne, String strTwo, String strThree, String strFour) {
 		String result = " ";
+		// converts to upper or lower case via toUpperCase() method or toLowerCase() method
 		String newOne = strOne.toUpperCase();
 		String newTwo = strTwo.toLowerCase();
 		String newThree = strThree.toUpperCase();
 		String newFour = strFour.toLowerCase();
+		// concatenates the four Strings together with no spaces between
 		result = newOne.concat(newTwo).concat(newThree).concat(newFour);
 		return result;
 	}

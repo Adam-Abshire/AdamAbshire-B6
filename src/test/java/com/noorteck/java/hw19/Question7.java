@@ -4,7 +4,9 @@ public class Question7 {
 
 	String helloTo(String strOne) {
 		String result = " ";
+		// create greeting
 		String greeting = "Hello";
+		// concatenate a space and then concatenate the name after the greeting
 		result = greeting.concat(" ").concat(strOne);
 		return result;
 	}
