@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method to check whether a given string ends with the
@@ -23,10 +23,16 @@ public class Question10 {
 
 	public static void main(String[] args) {
 		Question10 obj = new Question10();
-		System.out.println(obj.isEndWith("java training", "ing"));
-		System.out.println(obj.isEndWith("java training", "ng"));
-		System.out.println(obj.isEndWith("java training", "java"));
-		System.out.println(obj.isEndWith("java training", "train"));
+		
+		boolean resultOne = obj.isEndWith("java training", "ing");
+		boolean resultTwo = obj.isEndWith("java training", "ng");
+		boolean resultThree = obj.isEndWith("java training", "java");
+		boolean resultFour = obj.isEndWith("java training", "train");
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+		System.out.println(resultFour);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method to trim any leading or trailing whitespace from a given String
@@ -17,7 +17,11 @@ public class Question15 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(removeSpace(" Java Training      "));
-		System.out.println(removeSpace("     I   like to  practice     "));
+		
+		String resultOne = removeSpace(" Java Training      ");
+		String resultTwo = removeSpace("     I   like  to  practice     ");
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
 	}
 }

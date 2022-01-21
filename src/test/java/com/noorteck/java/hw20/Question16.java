@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method that takes two String parameters if last character of strOne
@@ -29,10 +29,17 @@ public class Question16 {
 
 	public static void main(String[] args) {
 		Question16 obj = new Question16();
-		System.out.println(obj.concatString("java", "awesome"));
-		System.out.println(obj.concatString("food", "door"));
-		System.out.println(obj.concatString("java", "training"));
-		System.out.println(obj.concatString("Pro", "ogress"));
+		
+		String resultOne = obj.concatString("java", "awesome");
+		String resultTwo = obj.concatString("food", "door");
+		String resultThree = obj.concatString("java", "training");
+		String resultFour = obj.concatString("Pro", "ogress");
+		
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+		System.out.println(resultFour);
 	}
 
 }

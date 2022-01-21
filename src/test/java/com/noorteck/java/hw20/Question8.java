@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * Write a method that takes two parameters, one String and one Int The method
@@ -26,10 +26,16 @@ public class Question8 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getCharacter("java training", 2));
-		System.out.println(getCharacter("java training", 5));
-		System.out.println(getCharacter("java training", 8));
-		System.out.println(getCharacter("java training", 22));
+		
+		char resultOne = getCharacter("java training", 2);
+		char resultTwo = getCharacter("java training", 5);
+		char resultThree = getCharacter("java training", 8);
+		char resultFour = getCharacter("java traingin", 22);
+	
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+		System.out.println(resultFour);
 	}
 
 }

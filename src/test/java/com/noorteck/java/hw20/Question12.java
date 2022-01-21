@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method to replace each substring of a given string that matches the

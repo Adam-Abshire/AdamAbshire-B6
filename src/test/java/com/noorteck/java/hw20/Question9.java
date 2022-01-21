@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method that takes two String parameters Method checks if a given
@@ -21,10 +21,16 @@ public class Question9 {
 
 	public static void main(String[] args) {
 		Question9 obj = new Question9();
-		System.out.println(obj.isThere("java training", "ini"));
-		System.out.println(obj.isThere("java training", "ava"));
-		System.out.println(obj.isThere("java training", "AVA"));
-		System.out.println(obj.isThere("java training", "Java"));
+		boolean resultOne = obj.isThere("java training", "ini");
+		boolean resultTwo = obj.isThere("java training", "ava");
+		boolean resultThree = obj.isThere("java training", "AVA");
+		boolean resultFour = obj.isThere("java training", "Java");
+		
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+		System.out.println(resultFour);
 	}
 
 }

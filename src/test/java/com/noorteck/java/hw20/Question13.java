@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method to check whether a given string starts with th contents of
@@ -19,9 +19,15 @@ public class Question13 {
 
 	public static void main(String[] args) {
 		Question13 obj = new Question13();
-		System.out.println(obj.isStartWith("java training", "ing"));
-		System.out.println(obj.isStartWith("java training", "ja"));
-		System.out.println(obj.isStartWith("java training", "java"));
-		System.out.println(obj.isStartWith("java training", "train"));
+	
+		boolean resultOne = obj.isStartWith("java training", "ing");
+		boolean resultTwo = obj.isStartWith("java training", "ja");
+		boolean resultThree = obj.isStartWith("java training", "java");
+		boolean resultFour = obj.isStartWith("java training", "train");
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+		System.out.println(resultFour);
 	}
 }

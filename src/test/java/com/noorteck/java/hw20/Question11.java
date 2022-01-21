@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method that takes three parameters one String parameter and 2 Char
@@ -26,9 +26,14 @@ public class Question11 {
 
 	public static void main(String[] args) {
 		Question11 obj = new Question11();
-		System.out.println(obj.threeEqual("Java Pro", 'P', 'B')); // returns Java Bro
-		System.out.println(obj.threeEqual("Lazy mode", 'm', 'C'));
-		System.out.println(obj.threeEqual("Training", 'T', ' '));
+		
+		String resultOne = obj.threeEqual("Java Pro", 'P', 'B');
+		String resultTwo = obj.threeEqual("Lazy Mode", 'M', 'C');
+		String resultThree = obj.threeEqual("Training", 'T', ' ');
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
 	}
 
 }

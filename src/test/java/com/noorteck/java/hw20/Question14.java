@@ -1,4 +1,4 @@
-package com.noorteck.java.hw19;
+package com.noorteck.java.hw20;
 
 /**
  * write a method to get a substring of a given string between two specified
@@ -16,8 +16,14 @@ public class Question14 {
 	}
 
 	public static void main(String[] args) {
-		System.out.println(getSubStr("java training", 2, 6));
-		System.out.println(getSubStr("Software Development Engineer in TEST", 11, 23));
-		System.out.println(getSubStr("Software Development Engineer in TEST", 21, 29));
+		
+		String resultOne = getSubStr("java training", 2, 6);
+		String resultTwo = getSubStr("Software Development Engineer in TEST", 11, 23);
+		String resultThree = getSubStr("Software Development Engineer in TEST", 21, 29);
+		
+		System.out.println(resultOne);
+		System.out.println(resultTwo);
+		System.out.println(resultThree);
+	
 	}
 }
