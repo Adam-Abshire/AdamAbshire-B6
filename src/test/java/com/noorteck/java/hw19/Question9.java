@@ -1,4 +1,4 @@
-package com.noorteck.java.hw20;
+package com.noorteck.java.hw19;
 
 /**
  * write a method that takes two String parameters Method checks if a given

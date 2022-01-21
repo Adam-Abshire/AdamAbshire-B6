@@ -1,4 +1,4 @@
-package com.noorteck.java.hw20;
+package com.noorteck.java.hw19;
 
 /**
  * write a method to check whether a given string ends with the
