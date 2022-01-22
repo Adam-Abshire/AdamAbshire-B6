@@ -12,7 +12,6 @@ public class Question16 {
 
 	String concatString(String strOne, String strTwo) {
 		String result = "";
-		// use charAtIndex() method to determine if the last character of strOne and the
 		// first character of strTwo are the same
 		int lastIndex = strOne.length() - 1;
 		if (strOne.charAt(lastIndex) == strTwo.charAt(0)) {
