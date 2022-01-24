@@ -19,6 +19,14 @@ public class Question3 {
 		} else if (str.charAt(0) == oldChar) {
 			// if it is update String to replace newCharacter for oldCharacter
 			str = newChar + str.substring(1, str.length());
+			// loop through the rest of the indices
+			for (int i = 0; i < str.length(); i++) {
+				// check each index for the oldCharacter
+				if (str.charAt(i) == oldChar) {
+					// update String with the newCharacter replacing the oldCharacter
+					str = str.substring(0, i) + newChar + str.substring(i+1, str.length());
+				}
+			}
 			// if String != null && String[0] != oldCharacter
 		} else {
 			// loop through the rest of the indices
@@ -40,7 +48,7 @@ public class Question3 {
 		String resultOne = obj.threeEqual(null, 'P', 'B');
 		String resultTwo = obj.threeEqual("Java Pro", 'P', 'B');
 		String resultThree = obj.threeEqual("Lazy mode", 'm', 'C');
-		String resultFour = obj.threeEqual("Training", 'T', ' ');
+		String resultFour = obj.threeEqual("TraiTning", 'T', ' ');
 
 		System.out.println(resultOne);
 		System.out.println(resultTwo);

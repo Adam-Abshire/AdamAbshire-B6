@@ -29,10 +29,12 @@ public class Question4 {
 		String resultTwo = getSubStr("java training", 2, 6);
 		String resultThree = getSubStr("Software Development Engineer in TEST", 11, 23);
 		String resultFour = getSubStr("Software Development Engineer in TEST", 21, 29);
+		String resultFive = getSubStr("Software Development Engineer in TEST", 1, 88);
 
 		System.out.println(resultOne);
 		System.out.println(resultTwo);
 		System.out.println(resultThree);
 		System.out.println(resultFour);
+		System.out.println(resultFive);
 	}
 }
