@@ -11,19 +11,18 @@ package com.noorteck.java.hw20;
 public class Question16 {
 
 	String concatString(String strOne, String strTwo) {
-		String result = "";
-		// see if last character of strOne & first character of strTwo are the same
+		// create variable to be equal to the last index of given String
 		int lastIndex = strOne.length() - 1;
+		// see if last character of strOne & first character of strTwo are the same
 		if (strOne.charAt(lastIndex) == strTwo.charAt(0)) {
 			// delete the last character of strOne before concatenating
 			strOne = strOne.substring(0, lastIndex);
-			result = strOne.concat(strTwo);
+			strOne = strOne.concat(strTwo);
 		} else {
 			// else concatenate them together normally
-			result = strOne.concat(strTwo);
+			strOne = strOne.concat(strTwo);
 		}
-
-		return result;
+		return strOne;
 	}
 
 	public static void main(String[] args) {
