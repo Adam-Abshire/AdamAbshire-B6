@@ -16,8 +16,8 @@ public class Question16 {
 		int lastIndex = strOne.length() - 1;
 		if (strOne.charAt(lastIndex) == strTwo.charAt(0)) {
 			// delete the last character of strOne before concatenating
-			String newString = strOne.substring(0, lastIndex) + strOne.substring(lastIndex + 1);
-			result = newString.concat(strTwo);
+			strOne = strOne.substring(0, lastIndex);
+			result = strOne.concat(strTwo);
 		} else {
 			// else concatenate them together normally
 			result = strOne.concat(strTwo);
