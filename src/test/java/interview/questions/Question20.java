@@ -8,14 +8,16 @@ public class Question20 {
 	 */
 	
 	// method that returns an int value
-	public static int largestNumber(int[] array) {
+	public static int secondLargest(int[] array) {
 		
+		// TreeSet used so that the numbers are stored in ascending order
 		TreeSet<Integer> numSet = new TreeSet<Integer>();
 		int result;
 		
 		for (int i = 0; i < array.length; i++) {
 			numSet.add(array[i]);
 		}
+		// result = 2nd to last number
 		result = numSet.floor(numSet.last()-1);
 		return result;
 		
@@ -23,7 +25,7 @@ public class Question20 {
 	
 	public static void main(String[] args) {
 		int[] array = {1, 3, 5, 2, 3, 9, 6};
-		int result = largestNumber(array);
+		int result = secondLargest(array);
 		System.out.println(result);
 	}
 
