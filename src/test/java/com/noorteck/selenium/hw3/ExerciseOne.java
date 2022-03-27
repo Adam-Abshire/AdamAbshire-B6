@@ -22,7 +22,7 @@ public class ExerciseOne {
 		WebElement emailInput = driver.findElement(By.id("userEmail"));
 		WebElement addressInput = driver.findElement(By.id("currentAddress"));
 		WebElement permanentAddressInput = driver.findElement(By.id("permanentAddress"));
-		WebElement submitButton = driver.findElement(By.id("submit"));
+		WebElement submitButton = driver.findElement(By.xpath("//*[@id=\'submit\']"));
 		
 		nameInput.sendKeys("Adam Abshire");
 		emailInput.sendKeys("adam.abshire@gmail.com");
