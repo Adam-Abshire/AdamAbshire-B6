@@ -12,7 +12,7 @@ public static void main(String[] args) throws InterruptedException {
 		String key = "webdriver.chrome.driver";
 		String path = "C:\\Users\\chefa\\Desktop\\Documents\\Noorteck\\Selenium\\chromedriver.exe";
 		String url = "http://demo.guru99.com/test/newtours/";
-		
+		//
 		System.setProperty(key, path);
 		WebDriver driver = new ChromeDriver();
 		driver.get(url);
