@@ -17,7 +17,7 @@ public class ExerciseOne {
 		WebDriver driver = new ChromeDriver();
 		
 		driver.get(url);
-		//
+		
 		WebElement nameInput = driver.findElement(By.id("userName"));
 		WebElement emailInput = driver.findElement(By.id("userEmail"));
 		WebElement addressInput = driver.findElement(By.id("currentAddress"));
