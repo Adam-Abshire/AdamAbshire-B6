@@ -28,7 +28,6 @@ public static void main(String[] args) throws InterruptedException {
 			System.out.println("Exception on Title Name");
 		}
 		
-		
 		WebElement firstName = driver.findElement(By.name("firstName"));
 		WebElement lastName = driver.findElement(By.name("lastName"));
 		WebElement phone = driver.findElement(By.name("phone"));
