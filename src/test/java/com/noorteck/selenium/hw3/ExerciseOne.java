@@ -28,11 +28,11 @@ public class ExerciseOne {
 		emailInput.sendKeys("adam.abshire@gmail.com");
 		addressInput.sendKeys("1 West Pratt Street Baltimore MD 21201");
 		permanentAddressInput.sendKeys("10 Mt. Washington Blvd Baltimore MD 21202");
+		Thread.sleep(10000);
 		submitButton.click();
 		
 		Thread.sleep(5000);
 		driver.quit();
 	}
-//
-	//
+
 }
