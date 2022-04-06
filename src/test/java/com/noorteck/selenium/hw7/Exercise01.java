@@ -121,13 +121,13 @@ public class Exercise01 {
 			System.out.println("I am still going to read all the available documents");
 		}
 
-		// 12. Close the Selenium Window
+		// 14. Close the Selenium Window
 		driver.close();
 		
-		// 13. Switch control to the parent window
+		// 15. Switch control to the parent window
 		driver.switchTo().window(parentWindow);
 		
-		// 14. Verify the parent window page title equals "Frames & windows"
+		// 16. Verify the parent window page title equals "Frames & windows"
 			// if true "I am done, now need to read Selenium documentation"
 			// otherwise "Selenium Documentation..."
 		expTitle = "Frames & windows";
@@ -138,7 +138,7 @@ public class Exercise01 {
 			System.out.println("Selenium Documentation....");
 		}
 		
-		// 15. quit driver
+		// 17. quit driver
 		Thread.sleep(3000);
 		driver.quit();
 				
