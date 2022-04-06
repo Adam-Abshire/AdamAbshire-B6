@@ -20,7 +20,7 @@ public class Exercise01 {
 		
 		System.setProperty(key, path);
 		WebDriver driver = new ChromeDriver();
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get(url);
 		
@@ -43,6 +43,7 @@ public class Exercise01 {
 				
 		// 3. Click "Click" Button
 		driver.findElement(By.xpath("//button[text() = 'click ']")).click();
+		Thread.sleep(2000);
 		
 		// 4. Click "Open New Tabbed Windows" Button
 		driver.findElement(By.xpath("//a[text() = 'Open New Tabbed Windows ']")).click();
@@ -68,10 +69,26 @@ public class Exercise01 {
 		if (title.equals(expTitle)) {
 			System.out.println("we are in index page");
 		} else {
-			System.out.println("not all elements display");
+			System.out.println("not in index page");
 		}
 		
-		// 8. Switch control to page that has page title as "Selenium"
+		// 8. verify the sign in button & skip button are displayed
+		WebElement signInButton = driver.findElement(By.cssSelector("#btn1"));
+		WebElement skipButton = driver.findElement(By.cssSelector("#btn2"));
+		
+		boolean signIsDisplayed = signInButton.isDisplayed();
+		boolean skipIsDisplayed = skipButton.isDisplayed();
+		
+		if (signIsDisplayed == true && skipIsDisplayed == true) {
+			System.out.println("all elements displayed");
+		} else {
+			System.out.println("not all elements displayed");
+		}
+		
+		// 9. close only index page
+		driver.close();
+		
+		// 10. Switch control to page that has page title as "Selenium"
 		for (String window : allWindows) {
 			driver.switchTo().window(window);
 			String currTitle = driver.getTitle();
@@ -80,7 +97,7 @@ public class Exercise01 {
 			}
 		}
 		
-		// 9. Verify the page title is equal to "Selenium"
+		// 11. Verify the page title is equal to "Selenium"
 		title = driver.getTitle();
 		expTitle = "Selenium";
 		if (title.equals(expTitle)) {
@@ -89,11 +106,11 @@ public class Exercise01 {
 			System.out.println("Nope");
 		}
 		
-		// 10. Click on the "Documentation" Link
+		// 12. Click on the "Documentation" Link
 		driver.findElement(By.xpath("//span[text() = 'Documentation']")).click();
 		
 		
-		// 11. Verify if "The Selenium Browser Automation Project" is displayed on the page
+		// 13. Verify if "The Selenium Browser Automation Project" is displayed on the page
 				// if true "Woooow, once I am done here I will raed all the availbable documents
 				// otherwise "I am still going to read all the available documents"
 		String statement = "The Selenium Browser Automation Project";
